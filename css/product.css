@@ -1,6 +1,9 @@
 .container {
   max-width: 960px;
 }
+body{
+      padding-top: 0rem!important;
+}
 
 /*
  * Custom translucent site header
