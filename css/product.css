@@ -6,7 +6,7 @@ body{
 }
 
 /*
- * Custom translucent site header
+ * se trasluce el head
  */
 
 .site-header {
@@ -24,7 +24,7 @@ body{
 }
 
 /*
- * Dummy devices (replace them with your own or something else entirely!)
+ * aspectos de fuenrtes y diseño de interiores
  */
 
 .product-device {
@@ -60,7 +60,7 @@ body{
 
 
 /*
- * Extra utilities
+ * Extra utilidades jorge
  */
 
 .border-top { border-top: 1px solid #e5e5e5; }
@@ -82,3 +82,31 @@ body{
 }
 
 .overflow-hidden { overflow: hidden; }
+
+
+/*nav{
+  height:60px;
+  padding-left: auto;
+}*/
+
+/*@media and (min-width: 793px){
+   .nav-item li{
+    padding-left: 10%;
+   }
+}*/
+
+#collapsibleNavbar,#menu{
+  text-align: center;
+  margin: :0 auto;
+}
+ .nav-item,#salir,#login{
+   font-size:18px;
+}
+
+/* .nav-item:hover{
+   color:white;
+   text-decoration:none;
+}*/
+/*ul .navbar-nav{
+  text-align: center;
+}*/

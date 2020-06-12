@@ -21,48 +21,93 @@
  </head>
   <body>
 
-    <nav class="site-header sticky-top py-1">
-      <div class="container d-flex flex-column flex-md-row justify-content-between">
-        <a class="py-2" href="index.html">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
-        </a>
-        <a class="py-2 d-none d-md-inline-block" href="paginas/semillas.html">Semillas</a>
-        <a class="py-2 d-none d-md-inline-block" href="paginas/frutales.html">Frutales</a>
-        <a class="py-2 d-none d-md-inline-block" href="paginas/nativos.html">Nativos</a>
-        <a class="py-2 d-none d-md-inline-block" href="paginas/carnivoras.htm">Carnivoras</a>
-        <a class="py-2 d-none d-md-inline-block" href="paginas/flores.html">Flores</a>
-        <a class="py-2 d-none d-md-inline-block" href="paginas/decorativas.html">Decorativas</a>
-        <a class="py-2 d-none d-md-inline-block" href="contacto.html">Contacto</a>
-        <a class="py-2 d-none d-md-inline-block" href="login.html">Login</a>
-      </div>
-    </nav>
+     <nav id="menu" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top col-12"> 
+      <a class="pl-5 pr-2 navbar-brand" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg></a>
+      <!--     <div class="container d-flex flex-column flex-md-row justify-content-between"> -->
+       <button class="navbar-toggler text-center" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+      </button>
+
+      <!--  -->
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav container">
+          <li class="nav-item">
+            <a class="nav-link pl-xl-4 pr-xl-4 pl-lg-3 pr-lg-3" href="./paginas/semillas.html">Semillas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pl-xl-4 pr-xl-4 pl-lg-3 pr-lg-3" href="./paginas/frutales.html">Frutales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pl-xl-4 pr-xl-4 pl-lg-3 pr-lg-3" href="./paginas/nativos.html">Nativos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link pl-xl-4 pr-xl-4 pl-lg-3 pr-lg-3" href="./paginas/carnivoras.html">Carnivoras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pl-xl-4 pr-xl-4 pl-lg-3 pr-lg-3" href="./paginas/flores.html">Flores</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link pl-xl-4 pr-xl-4 pl-lg-3 pr-lg-3" href="./paginas/decorativas.html">Decorativas</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link pl-xl-4 pr-xl-4 pl-lg-3 pr-lg-3" href="contacto.html">Contacto</a>
+          </li>
+
+          <li id="login">
+           <a class="nav-link pl-xl-4 pr-xl-4 pl-lg-3 pr-lg-2" href="login.html">Login</a>
+         </li>
+         <li id="salir">
+           <a class="nav-link pl-xl-4 pr-xl-4 pl-lg-3 pr-lg-2" href="#">Salir</a>
+         </li>
+       </ul>
+     </div>
+       <!--  <div id="login">
+          <a class="py-2 d-none d-md-inline-block" href="login.html">Login</a>
+        </div>  
+        <div id="salir">
+          <a class="py-2 d-none d-md-inline-block" href="">Salir</a>
+        </div> -->
+
+      </nav>
+
 
     <main role="main">
-       
+       <br>
       <!-- Envuelve el resto de la página en otro contenedor para centrar todo el contenido. -->
 
-      <div class="container marketing">
+      <div class="container marketing ">
         
-        <h1>Quienes Somos</h1>
+        <h1 class="text-center mt-5">Quienes Somos</h1>
+        <h6 class="text-center">Los lideres que diriguen nuestra compañia</h6>
         <!-- Tres columnas de texto -->
         <div class="row"> 
           <div class="col-lg-4">
             <img class="rounded-circle" src="img/1.png" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+            <h2>Ernesto Cañete</h2>
+            <h6>CIO <i>(Chief Information Officer)</i></h6>
+            <p class="text-justify">Es nuestro responsable de los sistemas de tecnologías de la información de la empresa a nivel de procesos y desde el punto de vista de la planificación. Ernesto como CIO analiza qué beneficios puede sacar la empresa de las nuevas tecnologías, identificar cuales le interesan más a la compañía y evaluar su funcionamiento. en tras palabras decide que plantas la llevan en el mercado XD.</p>
+            &nbsp;
+            <p><a class="btn btn-secondary" href="#" role="button">ver detalles »</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <img class="rounded-circle" src="img/2.png" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+            <h2>Francisco Uribe</h2>
+            <h6>CTO <i>Chief Information Officer)</i></h6>
+            <p class="text-justify">El es nuestro responsable técnico del desarrollo y el correcto funcionamiento de los sistemas de información desde el punto de vista de la ejecución. Siendo el responsable del equipo de ingeniería y de implementar la estrategia técnica para mejorar el producto final.Siempre debe estar a la vanguardia para implementar lo mejor del mundo de la tecnologia en nuestra empresa.</p>
+            &nbsp;
+            <p><a class="btn btn-secondary" href="#" role="button">ver detalles »</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <img class="rounded-circle" src="img/3.png" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+            <h2>Jorge Riffo</h2>
+            <h6>CCO <i>(Chief Communications Officer)</i></h6>
+            <p class="text-justify">El es el que lidera el equipo encargado de manejar la reputación corporativa de nuestra empresa,ademas de contactarse con los medios de comunicación y desarrollar las estrategias de Branding (marketing digital). Conoce a los medios y tiene buena relación con ellos para que la marca sea visible y, siempre que sea posible, esté relacionada con mensajes positivos. Gracias a el nuestros clientes nos aman XD</p>
+
+            <p><a class="btn btn-secondary" href="#" role="button">ver detalles »</a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 
