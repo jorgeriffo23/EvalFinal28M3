@@ -57,7 +57,7 @@
             <a class="nav-link pl-xl-4 pr-xl-4 pl-lg-3 pr-lg-3" href="contacto.html">Contacto</a>
           </li>
 
-          <li id="login">
+         <li id="login">
            <a class="nav-link pl-xl-4 pr-xl-4 pl-lg-3 pr-lg-2" href="login.html">Login</a>
          </li>
          <li id="salir">
@@ -125,3 +125,33 @@
     </footer>
     
     </main>
+
+    <script src="./js/jquery.min.js"></script>
+     <script>
+      // Tomamos el valor de sessionStorage y localStorage de la siguiente manera:
+      $("#pUsr").text(sessionStorage.usuario);
+      $("#pPsw").text(localStorage.password); 
+      
+      console.log(sessionStorage.usuario);
+      console.log(localStorage.password);
+
+      if (sessionStorage.usuario == undefined || localStorage.password == undefined){
+        $("#salir").hide();
+      }
+      else {
+        $("#login").hide();
+      }
+
+      $("#salir").click(function(){
+        // Con el metodo Clear limpiamos todo lo que tengamos en sessionStorage o localStorage 
+        sessionStorage.clear();
+        localStorage.clear();
+        window.location="../index.html";
+      });
+    </script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+
+  </html>
