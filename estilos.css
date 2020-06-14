@@ -1,6 +1,7 @@
 #nativo1{
 	background-image:url(img/Semillas/semilla_girasol.jpg);
 	background-size:90%;
+	background-repeat:none;
 }
 #nativo2{
 	background-image:url(img/frutales/cerezas-.jpg);
