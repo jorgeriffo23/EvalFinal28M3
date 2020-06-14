@@ -1,29 +1,35 @@
 #nativo1{
 	background-image:url(img/Semillas/semilla_girasol.jpg);
-	background-size:90%;
+	background-size:100%;
+	background-repeat: no-repeat;
 }
 #nativo2{
 	background-image:url(img/frutales/cerezas-.jpg);
-	background-size:90%;
+	background-size:100%;
+	background-repeat: no-repeat;
 }
 
 #nativo3{
 	background-image:url(img/nativos/araucaria.jpg);
-	background-size:90%;
+	background-size:100%;
+	background-repeat: no-repeat;
 }
 
 #nativo4{
 	background-image:url(img/carnivoras/Darlingtonia_californica.jpg);
-	background-size:90%;
+	background-size:100%;
+	background-repeat: no-repeat;
 }
 
 #nativo5{
 	background-image:url(img/planta_int/Chlorophytum_comosum.jpg);
-	background-size:90%;
+	background-size:100%;
+	background-repeat: no-repeat;
 }
 
 #nativo6{
 	background-image:url(img/planta_ext/Aspidistra_elatior.jpg);
-	background-size:90%;
+	background-size:100%;
+	background-repeat: no-repeat;
 }
 
